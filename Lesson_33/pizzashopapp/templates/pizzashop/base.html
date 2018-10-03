@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block page %}Пиццерия{% endblock %}
+
+{% block sidebar %}
+  <div class="text-center">
+    <img class="image-circle" src="{{ MEDIA_URL }}{{ request.user.pizzashop.logo }}" width="70" height="70">
+    <br>
+    <br>
+    <h6>Приветствую, {{ request.user.get_full_name }}</h6>
+    <h5>{{ request.user.pizzashop.name }}</h5>
+  </div>
+
+  <a href="{% url 'pizzashop-account' %}">Профиль</a>
+  -
+  <a href="{% url 'pizzashop-pizza' %}">Пиццы</a>
+{% endblock %}

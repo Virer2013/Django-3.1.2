@@ -1,0 +1,47 @@
+body {
+  padding-top: 50px;
+  background-color: #EDF2F5;
+  overflow: auto;
+}
+
+.bg-ruby {
+  background-color: #7B2324;
+}
+
+.btn-red {
+  color: white;
+  background-color: #E21E35;
+}
+
+.btn-red:hover,
+.btn-red:focus {
+  color: white;
+  background-color: #Ec4D57;
+}
+
+/* SIDE BAR */
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  background-color: #7B2324;
+  overflow: auto;
+}
+
+/* SIDE BAR - HEADER */
+.sidebar > div:first-child {
+  padding: 30px 10px;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #3F1E1E;
+}
+
+.sidebar > div:first-child > h6 {
+  color: #E0DEEB;
+}
+
+.sidebar > div:first-child > h5 {
+  color: #FFFFFF;
+}
