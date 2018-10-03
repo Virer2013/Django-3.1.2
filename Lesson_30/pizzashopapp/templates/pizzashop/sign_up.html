@@ -1,0 +1,14 @@
+{% extends 'base_signup.html' %}
+
+{% block title %}Войти{% endblock %}
+
+{% block heading %}Пиццерия - страница входа!{% endblock %}
+
+{% block content %}
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ user_form.as_p }}
+  {{ pizzashop_form.as_p }}
+  <button type="submit">Зарегистрироваться</button>
+</form>
+{% endblock %}
