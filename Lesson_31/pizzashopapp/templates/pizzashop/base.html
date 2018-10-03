@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block page %}Пиццерия{% endblock %}
+
+{% block sidebar %}
+  Привет, {{ request.user }}
+  <hr>
+
+  <a href="{% url 'pizzashop-account' %}">Профиль</a>
+  -
+  <a href="{% url 'pizzashop-pizza' %}">Пиццы</a>
+{% endblock %}
