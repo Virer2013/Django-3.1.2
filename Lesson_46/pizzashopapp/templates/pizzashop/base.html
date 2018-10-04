@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Пиццерия{% endblock %}
+
+{% url 'pizzashop-pizza' as pizzashop_pizza_url %}
+{% url 'pizzashop-account' as pizzashop_account_url %}
+
+{% block sidebar %}
+  <div class="text-center">
+    <img class="image-circle" src="{{ MEDIA_URL }}{{ request.user.pizzashop.logo }}" width="70" height="70">
+    <br>
+    <br>
+    <h6>Приветствую, {{ request.user.get_full_name }}</h6>
+    <h5>{{ request.user.pizzashop.name }}</h5>
+  </div>
+
+  <div class="list-group">
+    <span class="text-uppercase">Панель</span>
+    <a href="{% url 'pizzashop-pizza' %}"
+    class="list-group-item {% if request.path == pizzashop_pizza_url %} active {% endif %}">Пиццы</a>
+
+    <span class="text-uppercase">Профиль</span>
+    <a href="{% url 'pizzashop-account' %}"
+    class="list-group-item {% if request.path == pizzashop_account_url %} active {% endif %}">Профиль</a>
+  </div>
+
+  <div class="text-center">
+    <a href="{% url 'pizzashop-sign-out' %}?next={{ request.path }}" class="btn btn-red">Выход</a>
+  </div>
+{% endblock %}
