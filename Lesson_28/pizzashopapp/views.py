@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 
 from pizzashopapp.forms import UserForm, PizzaShopForm
-
 # Create your views here.
 def home(request):
     return redirect(pizzashop_home)

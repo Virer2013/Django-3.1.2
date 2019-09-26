@@ -16,7 +16,7 @@ body {
 .btn-red:hover,
 .btn-red:focus {
   color: white;
-  background-color: #Ec4D57;
+  background-color: #EC4D57;
 }
 
 /* SIDE BAR */
@@ -38,7 +38,7 @@ body {
   background-color: #3F1E1E;
 }
 
-.sidebar > div:first-child > h6 {
+.sidebar > div:first-child > h4 {
   color: #E0DEEB;
 }
 

@@ -8,6 +8,10 @@ body {
   background-color: #7B2324;
 }
 
+.bg-red {
+  background-color: #E21E25;
+}
+
 .text-white {
   color: white;
 }
@@ -20,7 +24,7 @@ body {
 .btn-red:hover,
 .btn-red:focus {
   color: white;
-  background-color: #Ec4D57;
+  background-color: #EC4D57;
 }
 
 /* SIDE BAR */
@@ -42,7 +46,7 @@ body {
   background-color: #3F1E1E;
 }
 
-.sidebar > div:first-child > h6 {
+.sidebar > div:first-child > h4 {
   color: #E0DEEB;
 }
 
@@ -105,6 +109,16 @@ body {
   padding: 0 40px;
 }
 
-.content .panel {
+.content .card {
   border: none;
+}
+
+.table > thead > tr > th,
+.table > thead > tr > td {
+  vertical-align: middle;
+}
+
+.table,
+.table > thead > tr > th {
+  border-color: #E31E25;
 }

@@ -2,14 +2,14 @@
 {% load bootstrap4 %}
 
 {% block page %}
-<div class="offset-lg-2 col-lg-8">
-  <div class="panel">
-    <div class="panel-heading bg-ruby">
-      <h4 class="panel-title text-center text-white">
+<div class="offset-lg-5 col-lg-8">
+  <div class="card">
+    <div class="card-header bg-ruby">
+      <h4 class="card-title text-center text-white">
         Корректировать пиццу
       </h4>
     </div>
-    <div class="panel-body">
+    <div class="card-body">
       <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {% bootstrap_form form %}

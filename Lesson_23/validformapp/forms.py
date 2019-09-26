@@ -8,7 +8,7 @@ def check_for_a(value):
 class NameForm(forms.Form):
     name = forms.CharField(validators=[check_for_a])
     email = forms.EmailField()
-    verify_email = forms.EmailField(label="Enter you email again!")
+    verify_email = forms.EmailField(label="Enter your email again!")
     text = forms.CharField(widget=forms.Textarea,
                             validators=[validators.MaxLengthValidator(5)])
 

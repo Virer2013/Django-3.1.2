@@ -1,41 +1,43 @@
 {% extends 'pizzashop/base.html' %}
 
 {% block page %}
-<div class="card">
-  <div class="card-header bg-ruby">
-    <h4 class="card-title text-center text-white">
-      Пиццы
-    </h4>
-  </div>
-  <div class="card-body">
-    <div class="text-right">
-      <a href="{% url 'pizzashop-add-pizza' %}" class="btn btn-red">Добавить пиццу</a>
-      <br>
-      <br>
+<div class="offset-lg-4 col-lg-10">
+  <div class="card">
+    <div class="card-header bg-ruby">
+      <h4 class="card-title text-center text-white">
+        Пиццы
+      </h4>
     </div>
-    <table class="table table-bordered table-hover table-striped">
-      <thead>
-        <tr class="bg-danger text-white text-center">
-          <th>ID</th>
-          <th>Название</th>
-          <th>Короткое описание</th>
-          <th>Цена</th>
-          <th>Изображение</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for pizza in pizzas %}
-          <tr>
-            <td scope="row">{{ pizza.id }}</td>
-            <td><a href="#">{{ pizza.name }}</a></td>
-            <td>{{ pizza.short_description }}</td>
-            <td>{{ pizza.price }}</td>
-            <td class="text-center"><img class="rounded"
-              src="{{ MEDIA_URL }}{{ pizza.image }}" width="50" height="50"></td>
+    <div class="card-body">
+      <div class="text-right">
+        <a href="{% url 'pizzashop-add-pizza' %}" class="btn btn-red">Добавить пиццу</a>
+        <br>
+        <br>
+      </div>
+      <table class="table table-bordered table-hover table-striped">
+        <thead>
+          <tr class="bg-danger text-white text-center">
+            <th>ID</th>
+            <th>Название</th>
+            <th>Короткое описание</th>
+            <th>Цена</th>
+            <th>Изображение</th>
           </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {% for pizza in pizzas %}
+            <tr>
+              <td scope="row">{{ pizza.id }}</td>
+              <td><a href="#">{{ pizza.name }}</a></td>
+              <td>{{ pizza.short_description }}</td>
+              <td>{{ pizza.price }}</td>
+              <td class="text-center"><img class="rounded"
+                src="{{ MEDIA_URL }}{{ pizza.image }}" width="50" height="50"></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 {% endblock %}

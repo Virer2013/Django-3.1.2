@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 {% block page %}
   {% for pizza in pizzas %}
-    <div>
-      <h2><a href="{% url 'pizza-detail' pizza_id=pizza.id %}">{{ pizza.name }}</a></h2>
-        {% if pizza.photo %}
-          <img src="{{ pizza.photo.url }}" alt="{{ pizza.name }}">
-        {% endif %}
-      <div>{{ pizza.short_description }}</div>
-      <div>{{ pizza.price|floatformat:"2" }}</div>
-    </div>
+  <div>
+    <h2><a href="{% url 'pizza-detail' pizza_id=pizza.id %}">{{ pizza.name }}</a></h2>
+      {% if pizza.photo %}
+        <img src="{{ pizza.photo.url }}" alt="{{ pizza.name }}">
+      {% endif %}
+    <div>{{ pizza.short_description }}</div>
+    <div>{{ pizza.price|floatformat:"2" }}</div>
+  </div>
   {% endfor %}
-{% endblock %}
+  {% endblock %}
