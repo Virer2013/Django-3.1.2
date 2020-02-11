@@ -3,7 +3,7 @@ beautifulsoup4==4.8.0
 certifi==2019.9.11
 chardet==3.0.4
 defusedxml==0.6.0
-Django==2.2.5
+Django==2.2.10
 django-bootstrap4==1.0.1
 django-braces==1.13.0
 django-oauth-toolkit==1.2.0
