@@ -5,7 +5,7 @@ class PizzaShop(models.Model):
     name = models.CharField(max_length=30, verbose_name='Пиццерия')
     description = models.TextField(verbose_name='Описание')
     rating = models.FloatField(default=0, verbose_name='Рейтинг')
-    url = models.URLField(verbose_name='Интернет-адрес пиццерии')
+    url = models.URLField(verbose_name='интернет-адрес пиццерии')
 
     class Meta:
         verbose_name='Пиццерия'
@@ -23,7 +23,7 @@ class Pizza(models.Model):
     class Meta:
         verbose_name='Пицца'
         verbose_name_plural='Пиццы'
-        ordering=['name']
+        ordering = ['name']
 
     def __str__(self):
         return self.name

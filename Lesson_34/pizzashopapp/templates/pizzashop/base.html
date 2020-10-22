@@ -4,7 +4,7 @@
 
 {% block sidebar %}
   <div class="text-center">
-    <img class="image-circle" src="{{ MEDIA_URL }}{{ request.user.pizzashop.logo }}" width="70" height="70">
+    <img class="rounded-circle" src="{{ MEDIA_URL }}{{ request.user.pizzashop.logo }}" width="70" height="70">
     <br>
     <br>
     <h4>Приветствую, {{ request.user.get_full_name }}</h4>

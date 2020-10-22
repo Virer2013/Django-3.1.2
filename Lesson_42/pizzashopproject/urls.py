@@ -1,7 +1,7 @@
 """pizzashopproject URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/dev/topics/http/urls/
+    https://docs.djangoproject.com/en/3.1/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -36,7 +36,7 @@ urlpatterns = [
 
     path('pizzashop/account/', views.pizzashop_account, name='pizzashop-account'),
     path('pizzashop/pizza/', views.pizzashop_pizza, name='pizzashop-pizza'),
-    path('pizzashop/pizza/add/', views.pizzashop_add_pizza, name='pizzashop-add-pizza'),
+    path('pizzashop/pizza/add', views.pizzashop_add_pizza, name='pizzashop-add-pizza'),
     path('pizzashop/pizza/edit/<int:pizza_id>', views.pizzashop_edit_pizza, name='pizzashop-edit-pizza'),
 
     # APIS

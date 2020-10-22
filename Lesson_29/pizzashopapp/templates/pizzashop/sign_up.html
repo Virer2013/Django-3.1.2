@@ -1,3 +1,4 @@
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +14,7 @@
 </head>
 <body>
   <h2>Страница Регистрации</h2>
-  <form method="POST" enctype="multipart/form-data">
+<form method="POST" enctype="multipart/form-data">
     {% csrf_token %}
     {{ user_form.as_p }}
     {{ pizzashop_form.as_p }}

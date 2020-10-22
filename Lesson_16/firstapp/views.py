@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from firstapp.models import Pizza
+
 # Create your views here.
 def home(request):
     pizzas = Pizza.objects.all()
