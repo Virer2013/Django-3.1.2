@@ -25,7 +25,7 @@ six==1.15.0
 social-auth-app-django==4.0.0
 social-auth-core==3.3.3
 soupsieve==2.0.1
-sqlparse==0.4.1
+sqlparse==0.4.2
 urllib3==1.25.11
 whitenoise==5.2.0
 dj-database-url==0.5.0
